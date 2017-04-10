@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-sm-12 wow fadeIn">
                         <i class="fa fa-building"></i>
-                        <h1>Realestate / <?php if(isset($query)){echo $query;}?></h1>
+                        <h1>Realestate <?php if(isset($query)){echo $query;}?></h1>
                         <div class="category">
                             <div class="search-form wow fadeInLeft animated">
                                 <div class="form-group">

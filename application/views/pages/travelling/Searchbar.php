@@ -3,7 +3,7 @@
                 <div class="row">
                     <div class="col-sm-12 wow fadeIn">
                         <i class="fa fa-car"></i>
-                        <h1>Travelling /</h1>
+                        <h1>Travelling </h1>
                         <div class="category">
                             <div class="search-form wow fadeInLeft animated">
                                 <div class="form-group">

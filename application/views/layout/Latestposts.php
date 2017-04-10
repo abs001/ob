@@ -133,12 +133,27 @@ $query = "(SELECT realestate.realid as id,realestate.title,realestate.`name`,rea
 							  <?php 
 							  	$counter = 0;
 							  	foreach ($LatestPostsArrayChunked[0] as $LatestPostsRow) {
+							  		$category = $LatestPostsRow['category'];
+							    			if($category==0){
+							    				$category = 'Realestate';
+							    			}elseif ($category == 1) {
+							    				$category = 'tuition';
+							    			}
+							    			elseif ($category == 2) {
+							    				$category = 'Hotel';
+							    			}elseif ($category == 3) {
+							    				$category = 'Travelling';
+							    			}elseif ($category == 4) {
+							    				$category = 'Automobile';
+							    			}elseif ($category == 5) {
+							    				$category = 'Other';
+							    			}
 							  		if($counter == 0){
 							  ?>
 							    <div class="item active">
 							      <div class="col-sm-3">
 					                <div class="service wow fadeInUp">
-					                    <a href=""><img id="postimg" src="<?php echo $LatestPostsRow['path'];?>" alt="<?php echo $LatestPostsRow['title'];?>"></a>
+					                    <a href="<?php base_url();echo 'index.php/'.$category;?>/view/<?php echo $LatestPostsRow['id'];?>"><img id="postimg" src="<?php echo $LatestPostsRow['path'];?>" alt="<?php echo $LatestPostsRow['title'];?>"></a>
 							                	<div class="portfolio-box-text">
 							                		<h3><?php
 							                			$title = $LatestPostsRow['title'];
@@ -159,7 +174,7 @@ $query = "(SELECT realestate.realid as id,realestate.title,realestate.`name`,rea
 							 	<div class="item">
 							      <div class="col-sm-3">
 					                <div class="service wow fadeInUp">
-					                   <a href=""><img id="postimg" src="<?php echo $LatestPostsRow['path'];?>" alt="<?php echo $LatestPostsRow['title'];?>"></a>
+					                   <a href="<?php base_url();echo 'index.php/'.$category;?>/view/<?php echo $LatestPostsRow['id'];?>"><img id="postimg" src="<?php echo $LatestPostsRow['path'];?>" alt="<?php echo $LatestPostsRow['title'];?>"></a>
 							                	<div class="portfolio-box-text">
 							                		<h3><?php
 							                			$title = $LatestPostsRow['title'];

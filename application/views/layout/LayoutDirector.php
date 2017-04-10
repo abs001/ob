@@ -12,7 +12,14 @@
 	$this->load->view('layout/Travelling');
 	$this->load->view('layout/Automobile');
 	$this->load->view('layout/Other');
-	$this->load->view('layout/Testinomials');
+	// $this->load->view('layout/Testinomials');
+?>
+	<div>
+		<br>
+		<br>
+		<br>
+	</div>
+<?php
 	$this->load->view('layout/Footer');
 	$this->load->view('layout/Js');
 ?>	

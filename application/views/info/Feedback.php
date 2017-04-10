@@ -26,7 +26,7 @@
 							<?php }?>
 	                    </div>
 	                    <?php }else{?>
-	                    <h4>For sending feedbak or any query you need to siginin, click to <a href="<?php echo base_url();?>index.php/Login/login">signin</a> now</h4>
+	                    <h4>For sending feedback or any query you need to siginin, click to <a href="<?php echo base_url();?>index.php/Login/login">signin</a> now</h4>
 	                    <?php }?>
 	                <div class="col-sm-5 contact-address wow fadeInUp">
 	                	<!-- Place advertisements -->
