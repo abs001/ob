@@ -523,4 +523,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				redirect(base_url().'index.php/Admin/login');
 			}
 		}
+		public function Feedback_view(){
+			if(isset($_SESSION['adminid'])){
+				$data['feedback'] = $this->db->get('feedback')->result_array();
+				$data['pagename']="Feedback_view.php";
+				$this->load->view('admin/pages/director',$data);
+			}else{
+				redirect(base_url().'index.php/Admin/login');
+			}
+		}
 	}//EOF Admin

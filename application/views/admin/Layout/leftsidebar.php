@@ -143,6 +143,12 @@
                             </li>
                         </ul>
                     </li>
+                     <li>
+                        <a href="<?php echo base_url();?>index.php/Admin/Feedback_view" class="">
+                            <i class="material-icons">feedback</i>
+                            <span>Feedback</span>
+                        </a>
+                    </li>
                </ul>
             </div>
             <!-- #Menu -->
